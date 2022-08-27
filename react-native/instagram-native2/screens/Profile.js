@@ -1,8 +1,8 @@
-export const FEED_PATH = "Feed";
+export const PROFILE_PATH = "Profile";
 import React from "react";
 import { Text, View } from "react-native";
 
-export default function Feed() {
+export default function Profile() {
   return (
     <View
       style={{
@@ -12,7 +12,7 @@ export default function Feed() {
         alignItems: "center",
       }}
     >
-      <Text style={{ color: "white" }}>Feed</Text>
+      <Text style={{ color: "white" }}>Profile</Text>
     </View>
   );
 }

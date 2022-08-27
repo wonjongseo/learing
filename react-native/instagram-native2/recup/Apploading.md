@@ -1,3 +1,5 @@
+https://reactnative.directory
+
 1. expo install expo-app-loading
 2. expo install expo-font
 3. expo install expo-asset
@@ -9,3 +11,5 @@ navigation
 3 npm install @react-navigation/stack
 
 expo install react-native-appearance
+
+expo install @react-native-async-storage/async-storage
