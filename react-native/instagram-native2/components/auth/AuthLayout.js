@@ -2,6 +2,7 @@ import React from "react";
 import {
   Keyboard,
   KeyboardAvoidingView,
+  Platform,
   TouchableWithoutFeedback,
 } from "react-native";
 
@@ -17,8 +18,10 @@ const Container = styled.View`
 
 const Logo = styled.Image`
   max-width: 50%;
-  height: 100px;
   width: 100%;
+  height: 100px;
+  margin: 0 auto;
+  margin-bottom: 20px;
 `;
 
 export default function AuthLayout({ children }) {
@@ -26,7 +29,11 @@ export default function AuthLayout({ children }) {
     Keyboard.dismiss();
   };
   return (
-    <TouchableWithoutFeedback onPress={onDismissKeyboard}>
+    <TouchableWithoutFeedback
+      disabled={Platform.OS === "web"}
+      onPress={onDismissKeyboard}
+      style={{ flex: 1 }}
+    >
       <Container>
         <KeyboardAvoidingView
           style={{ width: "100%", justifyContent: "center" }}
