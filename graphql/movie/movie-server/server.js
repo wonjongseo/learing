@@ -17,20 +17,6 @@ const users = [
   { id: "2", name: "b1", lastName: "l2" },
 ];
 
-/**
- *   type Query {
-    allMovies: [Movie!]!
-    allUser: [User!]!
-    allTweets: [Tweet!]!
-    tweet(id: ID!): Tweet
-    movie(id: String!): Movie
-  }
-  type Mutation {
-    postTweet(text: String!, userId: ID!): Tweet!
-    deleteTweet(id: ID!): Boolean!
-  }
- * 
- */
 const resolvers = {
   Query: {
     allTweets() {
