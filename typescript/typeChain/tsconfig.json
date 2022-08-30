@@ -3,9 +3,9 @@
   "compilerOptions": {
     "outDir": "build",
     "target": "ES6",
-    "moduleResolution": "node",
-    "lib": ["ES6", "DOM"],
+    "esModuleInterop": true,
+    "lib": ["ES6"],
     "strict": true,
-    "allowJs": true
+    "module": "CommonJS"
   }
 }

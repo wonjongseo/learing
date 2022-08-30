@@ -1,4 +1,5 @@
 export const PROFILE_PATH = "Profile";
+export const TAB_PROFILE_PATH = "TabProfile";
 import React from "react";
 import { Text, View } from "react-native";
 
@@ -12,7 +13,7 @@ export default function Profile() {
         alignItems: "center",
       }}
     >
-      <Text style={{ color: "white" }}>Profile</Text>
+      <Text style={{ color: "white" }}>Someones Profile</Text>
     </View>
   );
 }

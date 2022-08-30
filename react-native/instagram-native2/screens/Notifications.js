@@ -1,4 +1,5 @@
 export const NOTIFICATIONS_PATH = "Notifications";
+export const TAB_NOTIFICATIONS_PATH = "TabNotifications";
 import React from "react";
 import { Text, View } from "react-native";
 

@@ -1,8 +1,10 @@
 export const SEARCH_PATH = "Search";
+export const TAB_SEARCH_PATH = "TabSearch";
 import React from "react";
-import { Text, View } from "react-native";
+import { Text, TouchableOpacity, View } from "react-native";
+import { TAB_PHOTO_PATH } from "./Photo";
 
-export default function Search() {
+export default function Search({ navigation }) {
   return (
     <View
       style={{
@@ -12,7 +14,9 @@ export default function Search() {
         alignItems: "center",
       }}
     >
-      <Text style={{ color: "white" }}>Search</Text>
+      <TouchableOpacity onPress={() => navigation.navigate(TAB_PHOTO_PATH)}>
+        <Text style={{ color: "white" }}>Photo</Text>
+      </TouchableOpacity>
     </View>
   );
 }
