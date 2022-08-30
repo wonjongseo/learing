@@ -1,0 +1,14 @@
+{
+  "name": "typechain",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "author": "",
+  "scripts": {
+    "build": "tsc"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^4.8.2"
+  }
+}
