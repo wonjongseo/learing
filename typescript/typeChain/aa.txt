@@ -1,0 +1,109 @@
+[3-1] 멀리 뛰기
+(개요) 1칸 또는 2칸 이동 가능한 경우에 입력 받은 칸을 이동할 수 있는 경우
+(입력) number <-  이동해야 할 칸
+(출력) result <-  1칸, 2칸씩 이동해야 할 칸의 경우의 수 
+(예외) number < 1 경우 <- 0 리턴
+
+초기화: array <- int[number+1]
+      array[0] <- 1
+      array[1] <- 1
+
+점화식을 이용해서 표현하면 arr[n] = arr[n-2] + arr[n-1] 가 된다.
+i = 2 ; i< n+1 ; i++ 동안
+    arr[i] = arr[i-1] + arr[i-2]
+
+arr[n] 리턴
+
+
+[3-2] 시저 암호
+(개요) 입력 받은 문장의 각 알파벳을 조건에 따라 다른 알파벳으로 바꾸는 암화화시킨다.
+(입력) word  입력 받은 문자, rule 입력 받은 조건
+(출력) result  암호화된 문자
+(예외) rule 이 양수가 아닌경우 <- 빈문자 리턴
+      문자 중 알파벳이 아닌 경우 <- 행당 문자를 건내뛰고 처리
+
+초기화: result <- ""
+
+입력값 체크:
+    rule 이 양수가 아니면 
+        빈 문자열 리턴
+
+rule <- rule % 26
+    
+i =0 ; i < word.size; i++ 동안
+    word[i] == " " 거나  word[i] != 알파벳 이면
+        result <- result + " "    
+    아니면 
+        numberOfword <- (int)word[i]
+        encriptWord <- (string)(numberOfword + rule)
+        
+        result <- result + encriptWord
+
+result 리턴
+
+
+
+[3-3] 다음 큰 숫자
+(개요) 숫자를 입력 받아 입력 받은 숫자의 2진법의 1개의 개수를 유지하면서 다음으로 큰 수를 출력한다
+(입력) number 입력 받은 수
+(출력) result 다음으로 큰 수
+(예외) 입력 받은 수가 1보다 거나 1,000,000 보다 클 때 0을 출력
+
+입력값 체크
+
+초기화 :
+    arrayList : 입력 받은 수의 1을 담을 배열 <- 빈 배열
+    arrayListIdx <- 0
+    cnt :  1의 개수 <- 0
+    index :  이진수로 표현 시 1과 0의 경계 <-0
+    flag : 모두다 1의 경우 <- 0
+    result : 출력값 <- 0
+
+입력값 체크 :
+    number > 1 이거나 number < 1,000,000 이면 
+        result <- 0
+
+
+number 를 2진수로 바꿨을 때 1의 인덱스를 찾기
+number > 0 동안
+    number % 2 == 1 이면
+        arrList[arrayListIdx] <- cnt
+        arrayListIdx <- arrayListIdx+1
+    cnt <- cnt + 1
+    number <- number/ 2
+
+2진수로 바뀐 arrayList 의 원소를 보면서 2진수 1의 위치가 2개 차이나면
+차이나는 인덱스의 수를 1증가 시키고 0과 1의 경계선을 index에 저장
+i = arrayList.size-1 ; i >= 1 ; i-- 일 때까지
+    arrayList[i] – arrayList[i-1] > 1 이면
+        arrayList[i-1] <- arrayList[i-1]+1
+        index <- i-1
+        flag = 1
+        반복문 탈출
+
+2진수로 변환한 것이 모두다 1이면
+flag == 0 이면 
+    i= arrayList.size -1 ; i>=0 ;i-- 일 때가지
+        multi <- 1
+        첫번째 반복일 경우 (자리 올림을 위해서)
+            arrayList[i] <- arrayList[i] + 1
+        
+        j=0 ; j < arrayList[i] ; j++ 일 때가지 
+            multi <- multi * 2
+        
+        result = result + multi
+아니면 
+    i = 0 ; i<index ; i++ 까지
+        arrayList[i] <- i  (경계값부터 1을 한자리씩 뒤로 댕김)
+    
+    i = 0 ; i< arrayList.size ; i++ 까지
+        multi <- 1
+
+        j=0 ; j < arrayList[i] ; j++ 일 때가지 
+            multi <- multi * 2
+        
+        result = result + multi
+
+
+
+    

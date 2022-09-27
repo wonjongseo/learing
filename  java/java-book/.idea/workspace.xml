@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="840b821c-fd8c-4906-a9c1-a82196898700" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../spring/japshop/src/main/java/jpabook/japshop/domain/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/japshop/src/main/java/jpabook/japshop/domain/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/japshop/src/main/java/jpabook/japshop/domain/Delivery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/japshop/src/main/java/jpabook/japshop/domain/DeliveryStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/japshop/src/main/java/jpabook/japshop/domain/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/japshop/src/main/java/jpabook/japshop/domain/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/japshop/src/main/java/jpabook/japshop/domain/OrderItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/japshop/src/main/java/jpabook/japshop/domain/OrderStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/japshop/src/main/java/jpabook/japshop/domain/item/Album.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/japshop/src/main/java/jpabook/japshop/domain/item/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/japshop/src/main/java/jpabook/japshop/domain/item/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/japshop/src/main/java/jpabook/japshop/domain/item/Movie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/japshop/src/main/java/jpabook/japshop/exception/NotEnoughStockException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/japshop/src/main/java/jpabook/japshop/repository/ItemRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/japshop/src/main/java/jpabook/japshop/repository/MemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/japshop/src/main/java/jpabook/japshop/repository/OrderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/japshop/src/main/java/jpabook/japshop/service/ItemService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/japshop/src/main/java/jpabook/japshop/service/MemberService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/japshop/src/main/java/jpabook/japshop/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/japshop/src/main/resources/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/japshop/src/test/java/jpabook/japshop/service/MemberServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/japshop/src/test/java/jpabook/japshop/service/OrderServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/japshop/src/test/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript/typeChain/recup/myPackage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../typescript/typeChain/recup/myPackage.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2EszfYJIPfjHZdwOpGKzPVI72Qm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.23684211" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="840b821c-fd8c-4906-a9c1-a82196898700" name="Changes" comment="" />
+      <created>1663399187045</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663399187045</updated>
+      <workItem from="1663399188529" duration="53000" />
+      <workItem from="1663399357509" duration="27000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
